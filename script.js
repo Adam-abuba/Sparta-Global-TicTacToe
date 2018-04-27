@@ -1,15 +1,12 @@
 var cross = true;
 var naughts = false;
-// var gamw = {
-//   use
-// }
+
 
 var boxes = $(".box")
 
 
+// function startGame() {
 
-
-//
 for (var i = 0; i < boxes.length; i++) {
   $(boxes[i]).click(function (event) {
     if(cross === true){
@@ -19,6 +16,7 @@ for (var i = 0; i < boxes.length; i++) {
       $(box).html("X");
       $(box).off('click');
       naughts = true;
+
 
     }
     else if (naughts==true){
@@ -33,12 +31,10 @@ for (var i = 0; i < boxes.length; i++) {
 }
 
 $('#reset').click(function () {
-  // for (var i = 0; i < boxes.length; i++) {
-        // var box = $(this);
+
         $(".box").html("");
         cross = true;
         naughts = false;
+        // startGame();
 
-      // }
    });
-// });
